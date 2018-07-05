@@ -1,0 +1,153 @@
+/* this is css */ 
+
+/*===========================
+         Base Elements
+============================*/
+
+
+
+h1{
+    font-size: 5.67em;
+    text-transform: uppercase;
+    line-height: 1.6;
+    margin: 14px 0 0;
+    font-family: 'RalewayRegular'; 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+h2 {
+    font-size: 4.46em;
+    line-height: 1.2;
+    font-family: 'RalewayRegular'; 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+h3 {
+    font-size: 3.46em;
+    line-height: 1;
+    font-family: 'RalewayRegular'; 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+:root {
+    background-color: #d3d3d3;
+}
+
+/*==========================
+        Layout Syles
+===========================*/
+
+/* .barrel {
+    background-image: url(img/barrel.png);
+    min-height: 100%;
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+
+    background-attachment: fixed;
+} */
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-header {
+    height: 900px;
+    background:  #B8860B url(img/barrel.png) center; 
+    padding: 1em 0;
+    text-align: center;
+    background-size: cover;
+}
+
+.background {
+    color: #f4a460;
+}
+
+.main-footer {
+    text-align: center;
+    background: #696969;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.title {
+    margin: 0;
+    color: #2f4f4f;
+    border-bottom: 3px transparent;
+    padding-bottom: 15px;
+    text-shadow: 5px 3px 5px 3px rgba(0, 0, 0, 1);
+}
+
+.main-nav {
+    text-align: left;    
+}
+
+.picture {
+    height: 25%;
+    width: 25%;
+}
+
+.container {
+    text-align: center;
+}
+
+.pictures {
+    text-align: center;
+}
+
+.blog {
+    text-align: center;
+}
+
+.history {
+    text-align: center;
+}
+
+.work,
+.about {
+    width: 42.6%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+
+.work {
+    text-align: left;
+}
+
+.about {
+    text-align: right;
+}
+
+
+/*=========================
+        Media Queries
+==========================*/
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 769px) {
+    .container {
+        width: 70%;
+        max-width: 1000px;
+        margin: 0 auto;
+            }
+    
+    .main-header {
+        max-width: 400px;
+        padding: 40px 15px 0;
+    }
+
+    .title {
+        font-size: 2.0rem;
+    }
+
+
+}
