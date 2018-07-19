@@ -22,6 +22,7 @@ h2 {
     font-family: 'RalewayRegular'; 
     font-weight: normal; 
     font-style: normal; 
+    text-align: center;
 }
 
 h3 {
@@ -32,76 +33,60 @@ h3 {
     font-style: normal; 
 }
 
-:root {
-    background-color: #d3d3d3;
+body {
+    background-color: #696969;
+    width: 100% !important;
 }
 
 /*==========================
         Layout Syles
 ===========================*/
 
-/* .barrel {
-    background-image: url(img/barrel.png);
-    min-height: 100%;
-    position: relative;
-    opacity: 0.70;
-    background-position: center;
-    background-size: cover;
-
-    background-attachment: fixed;
-} */
-
-.wrapper {
-    width: 80%;
-    margin: 0 auto;
-}
 
 .main-header {
-    height: 900px;
-    background:  #B8860B url(img/barrel.png) center; 
-    padding: 1em 0;
+    height: 400px;
+    background:  #B8860B url(img/whiskeybarrels.jpg) center; 
     text-align: center;
     background-size: cover;
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
 
-.background {
-    color: #f4a460;
-}
 
 .main-footer {
     text-align: center;
-    background: #696969;
+    background: darkslategray;
     padding-top: 25px;
     padding-bottom: 25px;
+    width: 100%;
 }
 
 .title {
     margin: 0;
-    color: #2f4f4f;
-    border-bottom: 3px transparent;
+    color: white;
+    height: 400px;
+    border-bottom: 3px;
     padding-bottom: 15px;
-    text-shadow: 5px 3px 5px 3px rgba(0, 0, 0, 1);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
 
-.main-nav {
-    text-align: left;    
-}
-
-.picture {
-    height: 25%;
-    width: 25%;
-}
-
-.container {
+.welcome {
     text-align: center;
+    padding-bottom: 25px;
 }
 
 .pictures {
+    display: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 32%;
+    width: 32%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
 
 .blog {
     text-align: center;
+    padding-top: 25px;
 }
 
 .history {
@@ -117,37 +102,131 @@ h3 {
 }
 
 .work {
-    text-align: left;
+    text-align: center;
 }
 
 .about {
-    text-align: right;
+    text-align: center;
 }
+
+/*==========================
+        Nav Bar
+===========================*/
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #696969;
+    color: black;
+  }
+  
+  .active {
+    background-color: #000;
+    color: white;
+  }
+
+/*=========================
+        Social Media
+==========================*/
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+/* .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+} */
+
 
 
 /*=========================
         Media Queries
 ==========================*/
 
-@media (max-width: 1000px) {
 
-}
-
-@media (max-width: 769px) {
-    .container {
+@media (min-width: 769px) {
+    .welcome {
+        display: center;
+        text-align: center;
         width: 70%;
-        max-width: 1000px;
-        margin: 0 auto;
-            }
+        margin: auto;
+        }
     
     .main-header {
-        max-width: 400px;
+        width: 590px;
         padding: 40px 15px 0;
     }
 
     .title {
-        font-size: 2.0rem;
+        font-size: 3.0rem;
     }
 
+    .pictures {
+        margin-left: auto;
+        margin-right: auto;
+        height: 37%;
+        width: 37%;
+
+    }
 
 }
+
+@media (min-width: 375px) {
+    .main-header {
+        width: 100%;
+
+    }
+    
+    .pictures {
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
