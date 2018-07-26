@@ -15,3 +15,4 @@ Needed to run the page:
 -JavaScript must be turned on.
 -The social media links work and must be logged in to access them.
 -Make sure you download the my_first_repository to access all of the up to date code in one folder.
+-Download all of the pictures in the img folder for them to pull up.
