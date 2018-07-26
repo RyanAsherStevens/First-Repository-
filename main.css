@@ -199,7 +199,6 @@ body {
     
     .main-header {
         width: 590px;
-        padding: 40px 15px 0;
     }
 
     .title {
@@ -214,6 +213,7 @@ body {
 
     }
 
+
 }
 
 @media (min-width: 375px) {
@@ -224,9 +224,6 @@ body {
     
     .pictures {
         width: 50%;
-        height: 50%;
-        margin-left: auto;
-        margin-right: auto;
     }
-}
 
+}
